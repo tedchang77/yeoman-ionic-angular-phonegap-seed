@@ -1,6 +1,7 @@
 {
   "name": "yeomanionicangularphonegapseed",
   "version": "0.0.0",
+  "repository": "https://github.com/MNCC/yeoman-ionic-angular-phonegap-seed",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
