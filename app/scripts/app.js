@@ -4,7 +4,9 @@ angular.module('yeomanIonicAngularPhonegapSeedApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ngAnimate',
+  'ionic'
 ])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
