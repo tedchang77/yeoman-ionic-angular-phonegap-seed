@@ -17,9 +17,38 @@
     <!-- endbuild -->
   </head>
   <body ng-app="yeomanIonicAngularPhonegapSeedApp">
-    <div class="container" ng-view=""></div>
-
-    <script src="phonegap.js"></script>
+    <div ng-controller="MenuCtrl">
+      <side-menus>
+      <pane side-menu-content>
+      <header class="bar bar-header bar-assertive">
+        <button class="button button-icon" ng-click="openLeft()"><i class="icon ion-navicon"></i></button>
+        <h1 class="title">Seed</h1>
+      </header>
+      <nav-view></nav-view>
+      </pane>
+      <side-menu side="left">
+      <header class="bar bar-header bar-assertive">
+        <h1 class="title">Menu</h1>
+      </header>
+      <content has-header="true">
+      <ul class="list">
+        <a ui-sref="start" class="item"><span>List</span></a>
+      </ul>
+      </content>
+      </side-menu>
+      <side-menu side="right">
+      <header class="bar bar-header bar-assertive">
+        <h1 class="title">Notifications</h1>
+      </header>
+      <content has-header="true">
+      <ul class="list">
+        <a ui-sref="start" class="item">Home</a>
+      </ul>
+      </content>
+      </side-menu>
+      </side-menus>
+    </div>
+    <script type="text/javascript" src="phonegap.js"></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -35,9 +64,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/services/countries.js"></script>
+    <script src="scripts/services/backend.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
