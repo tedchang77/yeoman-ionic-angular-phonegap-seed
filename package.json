@@ -1,7 +1,7 @@
 {
   "name": "yeomanionicangularphonegapseed",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "codename": "alpha",
   "repository": "https://github.com/MNCC/yeoman-ionic-angular-phonegap-seed",
   "dependencies": {},
@@ -50,7 +50,7 @@
   },
   "licenses": [
     {
-    "type": "MIT"
-  }
+      "type": "MIT"
+    }
   ]
 }
