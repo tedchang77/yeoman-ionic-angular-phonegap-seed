@@ -1,6 +1,6 @@
 {
   "name": "yeoman-ionic-angular-phonegap-seed",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "angular": "1.2.10",
     "ionic": "0.9.24",
